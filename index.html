@@ -3,49 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manuel Ramírez Preza | Enlaces</title>
+  <title>Manuel Ramírez Preza | Música y Enlaces</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: system-ui, -apple-system, sans-serif;
-      background: #121212;
+      background: linear-gradient(160deg, #090d16 0%, #1e1b4b 50%, #0f172a 100%);
       color: #ffffff;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      padding: 36px 20px;
       margin: 0;
     }
     .contenedor {
       width: 100%;
-      max-width: 420px;
+      max-width: 440px;
       text-align: center;
     }
-    h1 { font-size: 1.5rem; margin-bottom: 6px; }
-    p { color: #b3b3b3; font-size: 0.95rem; margin-bottom: 28px; }
+    .insignia {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: #e2e8f0;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 1.7rem;
+      margin: 0 0 6px 0;
+      letter-spacing: 0.3px;
+    }
+    .subtitulo {
+      color: #cbd5e1;
+      font-size: 0.96rem;
+      margin: 0 0 22px 0;
+    }
+    .tarjeta-info {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      padding: 18px;
+      text-align: left;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    }
+    .tarjeta-info h2 {
+      font-size: 1rem;
+      margin: 0 0 10px 0;
+      color: #38bdf8;
+    }
+    .tarjeta-info p {
+      margin: 0 0 12px 0;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      color: #e2e8f0;
+    }
+    .datos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .dato {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .dato strong {
+      display: block;
+      font-size: 1.05rem;
+      color: #ffffff;
+    }
+    .dato span {
+      font-size: 0.78rem;
+      color: #94a3b8;
+    }
     .boton {
       display: block;
-      background: #1f1f1f;
       color: #ffffff;
       text-decoration: none;
-      padding: 16px;
-      margin-bottom: 14px;
-      border-radius: 12px;
-      font-weight: 600;
-      border: 1px solid #333;
-      transition: background 0.2s;
+      padding: 15px 20px;
+      margin-bottom: 13px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.4px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+      transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                  box-shadow 0.28s ease,
+                  filter 0.28s ease;
     }
-    .boton:hover { background: #2d2d2d; }
+    .boton:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 14px 26px rgba(0, 0, 0, 0.5);
+      filter: brightness(1.1);
+    }
+    .boton:active {
+      transform: translateY(1px) scale(0.98);
+    }
+    .spotify {
+      background: linear-gradient(135deg, #1db954, #15803d);
+    }
+    .youtube {
+      background: linear-gradient(135deg, #ff2e2e, #b91c1c);
+    }
+    .tiktok {
+      background: linear-gradient(135deg, #06b6d4, #ec4899);
+    }
+    .facebook {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    }
   </style>
 </head>
 <body>
   <div class="contenedor">
+    <div class="insignia">Celaya, Guanajuato • Autor y Productor</div>
     <h1>Manuel Ramírez Preza</h1>
-    <p>Música, redes y contacto directo</p>
+    <p class="subtitulo">Letra, música y producción original</p>
 
-    <a class="boton" href="https://open.spotify.com/user/vylnrby96dg62aalilbs3z3n5?si=Y9FFncGwRsOAJCPMGy41jg&utm_source=copy-link" target="_blank">Spotify</a>
-    <a class="boton" href="https://www.youtube.com/@ManuelRamirez-tp9wu" target="_blank">YouTube</a>
-    <a class="boton" href="https://www.tiktok.com/@federicomanuelram1?_r=1&_t=ZS-9BYRqy7uO40" target="_blank">TikTok</a>
-    <a class="boton" href="https://www.facebook.com/share/19oqcDnxDX/" target="_blank">Facebook</a>
+    <div class="tarjeta-info">
+      <h2>Trayectoria y catálogo</h2>
+      <p>
+        Compositor y productor independiente. Inicié el lanzamiento oficial de mi catálogo en plataformas digitales entre finales de 2025 y enero de 2026 con 27 canciones originales, fusionando cumbia, banda sinaloense, tex-mex y sonidos latinos.
+      </p>
+      <div class="datos">
+        <div class="dato">
+          <strong>Dic 2025 / Ene 2026</strong>
+          <span>Inicio de catálogo</span>
+        </div>
+        <div class="dato">
+          <strong>27+ temas</strong>
+          <span>Canciones lanzadas</span>
+        </div>
+      </div>
+    </div>
+
+    <a class="boton spotify" href="https://open.spotify.com/user/vylnrby96dg62aalilbs3z3n5?si=Y9FFncGwRsOAJCPMGy41jg&utm_source=copy-link" target="_blank">Spotify</a>
+    <a class="boton youtube" href="https://www.youtube.com/@ManuelRamirez-tp9wu" target="_blank">YouTube</a>
+    <a class="boton tiktok" href="https://www.tiktok.com/@federicomanuelram1?_r=1&_t=ZS-9BYRqy7uO40" target="_blank">TikTok</a>
+    <a class="boton facebook" href="https://www.facebook.com/share/19oqcDnxDX/" target="_blank">Facebook</a>
   </div>
 </body>
 </html>
